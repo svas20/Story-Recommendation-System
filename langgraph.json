@@ -1,0 +1,19 @@
+
+{
+    "dependencies": [
+        ".",
+        "langgraph",
+        "openai",
+        "python-dotenv",
+        "langchain",
+        "langchain_openai",
+        "ipython",
+        "langchain-community",
+        "faiss-cpu"
+    ],
+    "env": ".env",
+    "graphs": {
+        "my_agent": "main:graph"
+    }
+    
+  }
