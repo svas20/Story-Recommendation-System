@@ -1,0 +1,19 @@
+[project]
+name = "my_project"
+version = "0.1.0"
+description = "Story Recommendation System"
+authors = [{ name = "Satya Srinivas", email = "satyasrinivas.bokka@outlook.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "openai",
+    "python-dotenv",
+    "langchain",
+    "langchain_openai",
+    "ipython",
+    "langchain-community",
+    "faiss-cpu",
+    "langgraph-cli",
+    "langgraph-cli[inmem]",
+]
