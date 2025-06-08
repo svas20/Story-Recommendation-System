@@ -4,13 +4,13 @@ AI Story Generator is a LangGraph-based application that creates short, age-appr
 ▶️ Execution Flow:
 - Story Generation: The story_generator node generates the story using the retriever tool. This tool provides user feedback from previously generated stories.
 
-- Story Judging: After generating the story, it is passed to the LLMJudge. This is where I used human-in-the-loop that interprets the graph to get user feedback (to provide this feedback, I used Agent Inbox [https://github.com/langchain-ai/agent-inbox], a user interface for feedback collection. As of now, I have not created a custom user interface; I am using this existing one).
+- Story Judging: After generating the story, it is passed to the LLMJudge. This is where I used human-in-the-loop that interprets the graph to get user feedback (to provide this feedback, I used Agent Inbox [https://github.com/langchain-ai/agent-inbox], a user interface for feedback collection.).
 
 - Feedback Writing: After receiving the user feedback, it is passed to the write_feedback node to summarize and write the feedback to the vector database. This vector database will be used by the story_generator node through the retriever tool to guide future story generations.
 
 ▶️ Execution Steps:
-- Install dependencies:
-   pip install -r requirements.txt
+- Install dependencies and create venv:
+   uv sync
 
 - Run the graph using LangGraph CLI
    langgraph dev
