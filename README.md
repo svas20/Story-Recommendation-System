@@ -12,10 +12,10 @@ AI Story Generator is a LangGraph-based application that creates short, age-appr
 - Install dependencies and create venv:
    uv sync
 
-- Run the graph using LangGraph CLI
+- Run the graph using LangGraph CLI:
    langgraph dev
 
-- Set up Agent Inbox for human-in-the-loop feedback
+- Set up Agent Inbox for human-in-the-loop feedback:
    git clone https://github.com/langchain-ai/agent-inbox.git
    cd agent-inbox
    yarn install
